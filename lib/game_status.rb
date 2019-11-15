@@ -30,8 +30,9 @@ def full?(board)
   board.all? {|index| index == "X" || index == "O"}
 end
 
+
 def draw?(board)
-  !won(board) && full?(board)
+won?(board) == false && full?(board) ? true : false
 end
 
 def over?(board)
