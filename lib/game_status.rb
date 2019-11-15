@@ -24,7 +24,7 @@ def won?(board)
 
     }
 
-    return false 
+    return false
 
   end
 def full?(board)
@@ -58,4 +58,4 @@ def winner (board)
       return"O"
     end
   end
-end 
+end
