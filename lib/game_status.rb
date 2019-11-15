@@ -22,9 +22,9 @@ def won?(board)
       return win_combination
     end
 }
-return false 
-else 
-end 
+return false
+else
+end
 
 def full?(board)
   board.all? {|index| index == "X" || index == "O"}
