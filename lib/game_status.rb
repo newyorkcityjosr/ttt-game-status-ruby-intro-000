@@ -27,7 +27,11 @@ return false
 end
 
 def full?(board)
-  board.all? {|index| index == "X" || index == "O"}
+  if board.detect {|i| i == " " || i == nil}
+    return false 
+  else 
+    return true
+  end
 end
 
 def draw?(board)
