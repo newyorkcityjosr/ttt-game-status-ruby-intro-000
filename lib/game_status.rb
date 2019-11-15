@@ -23,7 +23,7 @@ def won?(board)
     end
 }
 return win_combination
-else 
+else
   false
 end
 
