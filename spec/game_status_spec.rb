@@ -96,7 +96,7 @@ describe "./lib/game_status.rb" do
     it 'returns true for a draw' do
       board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
-      expect(draw?(board)).to be_falsey
+      expect(draw?(board)).to be_truthy
     end
 
     it 'returns false for a game won in the first row' do
