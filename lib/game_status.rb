@@ -46,16 +46,13 @@ def over?(board)
   end
 end
 
-def winner (board)
-  index = []
-  index = won?(board)
-  if index == false
-    return nil
+def winner(board)
+  if won?(board) && !draw?(board)
+    result = won?(board)
+    # binding.pry
+    y = result[0]
+    return board[y]
   else
-    if board[index[0]] == "X"
-      return "X"
-    else
-      return"O"
-    end
+    return nil
   end
 end
