@@ -22,9 +22,7 @@ def won?(board)
       return win_combination
     end
 }
-return win_combination
-else
-  false
+
 end
 
 def full?(board)
